@@ -29,6 +29,6 @@ int get_op(char *opcode)
 			return (0);
 		}
 
-	fprintf(stderr, "L%d: unknown instruction %s", globv.line_number, opcode);
+	fprintf(stderr, "L%d: unknown instruction %s\n", globv.line_number, opcode);
 	exit(EXIT_FAILURE);
 }
